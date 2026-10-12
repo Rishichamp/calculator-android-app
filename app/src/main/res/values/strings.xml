@@ -7,4 +7,5 @@
         <item>Division</item>//3
         <item>Remainder</item>//4
     </string-array>
+    <string name="action_button">Calculate</string>
 </resources>
