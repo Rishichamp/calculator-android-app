@@ -1,5 +1,7 @@
 # Android Calculator App
 
+[![build](https://github.com/Rishichamp/calculator-android-app/actions/workflows/build.yml/badge.svg)](https://github.com/Rishichamp/calculator-android-app/actions/workflows/build.yml)
+
 This Android application performs basic arithmetic operations such as **addition, subtraction, multiplication, division, and modulus**.
 
 The app is built using **Java and Android Studio** and demonstrates how Android UI components like **EditText, Button, Spinner, and TextView** can be used to create an interactive calculator application.
@@ -86,6 +88,15 @@ Output: Answer = 15.00
 </p>
 
 ---
+
+## 2026 update
+
+- **Tooling:** upgraded from Gradle 7.3 / AGP 7.2 (which don't run on the JDK 21 in current Android Studio) to Gradle 8.11.1, AGP 8.7.3, compileSdk 35 / targetSdk 34, Java 17 and current AndroidX libraries.
+- Typing just "." crashed the app; now it shows an error.
+- Dividing by zero showed "Infinity" and remainder by zero showed "NaN"; both now show a clear error.
+- The empty-field message was set on a hidden view, so it never appeared.
+- The result box no longer cuts off long answers; the button reads **Calculate**.
+- **Tests:** 4 unit tests and 4 on-device UI tests, all passing on an Android 11 emulator, plus a 2,000-event monkey stress test with no crashes. GitHub Actions builds, unit-tests and lints the app on every push.
 
 ## Author
 
