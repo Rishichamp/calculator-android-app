@@ -91,8 +91,6 @@ public class MainActivity extends AppCompatActivity
                         result.setText(String.format("Answer=%.2f",r));
                     }
                 }
-
-
             }
         });
 
