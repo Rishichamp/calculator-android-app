@@ -100,4 +100,4 @@ Output: Answer = 15.00
 
 ## Author
 
-Rishi Singh
+**Rishi Singh** — [GitHub](https://github.com/Rishichamp)
